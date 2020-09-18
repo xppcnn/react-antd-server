@@ -6,6 +6,7 @@ module.exports = {
       type: 'string',
       required: true,
       description: '密码',
+      select: false
     },
     username: {
       type: 'string',
