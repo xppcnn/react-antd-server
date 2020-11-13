@@ -15,7 +15,7 @@ module.exports = {
       description: '密码',
       example: '111111',
     },
-    username: {
+    name: {
       type: 'string',
       required: true,
       description: '姓名',

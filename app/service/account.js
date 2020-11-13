@@ -6,7 +6,7 @@ class AccountService extends Service {
   async login(payload) {
     const { ctx, service } = this;
 
-    const user = await ctx.model.User.findOne({ username: payload.username });
+    const user = await ctx.model.User.findOne({ name: payload.username });
 
     if (!user) {
       ctx.throw(404, '该用户不存在');
